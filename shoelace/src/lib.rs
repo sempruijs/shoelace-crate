@@ -6,6 +6,12 @@ pub struct Point {
     pub y: i64,
 }
 
+impl Point {
+    pub fn origin() -> Self {
+        Point { x: 0, y: 0 }
+    }
+}
+
 impl From<(i64, i64)> for Point {
     fn from(pair: (i64, i64)) -> Self {
         Point {
