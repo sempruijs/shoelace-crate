@@ -1,6 +1,6 @@
 pub struct Point {
-    x: i64,
-    y: i64,
+    pub x: i64,
+    pub y: i64,
 }
 
 impl From<(i64, i64)> for Point {
@@ -12,7 +12,7 @@ impl From<(i64, i64)> for Point {
     }
 }
 
-pub struct Area(f64);
+pub struct Area(pub f64);
 
 impl From<Vec<Point>> for Area {
     fn from(points: Vec<Point>) -> Self {
