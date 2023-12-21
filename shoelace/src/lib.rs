@@ -1,3 +1,4 @@
+#[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub struct Point {
     pub x: i64,
     pub y: i64,
@@ -12,6 +13,7 @@ impl From<(i64, i64)> for Point {
     }
 }
 
+#[derive(Debug, Clone, Copy)]
 pub struct Area(pub f64);
 
 impl From<Vec<Point>> for Area {
