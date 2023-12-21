@@ -25,7 +25,6 @@ impl From<Vec<Point>> for Area {
                 false => &points[i + 1],
             };
             let area = (point.x * next_point.y) - (point.y * next_point.x);
-            dbg!(&area);
             result += area;
         }
         let total_area = result as f64 * 0.5;
