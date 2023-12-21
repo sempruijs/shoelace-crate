@@ -67,4 +67,11 @@ mod tests {
         let expected_1: f64 = 55.0;
         assert_eq!(r_1, expected_1);
     }
+
+    #[test]
+    fn test_origin() {
+        let result = Point::origin();
+        let expected = Point { x: 0, y: 0 };
+        assert_eq!(expected, result);
+    }
 }
