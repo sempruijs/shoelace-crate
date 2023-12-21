@@ -74,4 +74,11 @@ mod tests {
         let expected = Point { x: 0, y: 0 };
         assert_eq!(expected, result);
     }
+
+    #[test]
+    fn test_display_point() {
+        let result = format!("{}", Point::origin());
+        let expected = "(0,0)";
+        assert_eq!(result, expected);
+    }
 }
